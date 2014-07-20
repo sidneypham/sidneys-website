@@ -1,0 +1,215 @@
+html {
+    background: #e3e3e3;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(78,78,78);
+}
+
+#universe {
+    /* The universe takes up all available space */
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    
+    /* The universe is black */
+    background-color: black;
+}
+
+.wrap {
+    background: #eeeeee;
+    width: 920px;
+    min-height: 100vh;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+body {  
+    width: 980px;
+    margin: auto;       
+}
+
+.logo {
+    background: url(../img/sidneyswebsite.gif) no-repeat;
+    text-indent: -9999px;
+    height: 111px;
+    width: 300px;
+}
+
+h1 {
+    margin: 0px;
+    padding-top: 8px;
+}
+
+.navbar {
+    width: 980px;
+    padding: 8px 0px;
+    background-color: #eeeeee; 
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    position: relative;
+    right: 30px;
+}
+
+.navbar li {
+    display: inline-block;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+    color: red;
+    font-size: 30px;
+    padding: 8px;
+}
+
+.navbar a:hover {
+    background-color: #5cb85c;
+    /* background color2 is #e5e5e5 */
+    color: #cc0000;
+}
+
+#current {
+    color: blue;
+    background-color: #e3e3e3;
+}
+
+#current:hover {
+    color: #0000b2;
+    background-color: #e3e3e3;
+}
+
+.button {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.button:hover
+{
+  color: #ffffff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+}
+
+form ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+form label {
+    display: inline-block;
+    width: 150px;
+}
+
+/*
+blue: #428bca;
+green: #5cb85c;
+lightblue: #5bc0de ;
+yellow: #f0ad4e;
+red: #d9534f;
+*/
+
+
+
+#sun {
+    position: absolute;
+    /* Positions the top-left corner of the image to be *
+    /* in the middle of the box */
+    top: 50%;
+    left: 50%;
+    
+    /* Play with these numbers to see what it does */
+    height: 200px;
+    width: 200px;
+    margin-top: -100px; 
+    margin-left: -100px;
+    
+    border-color: orange;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    
+    box-shadow: 0 0 85px yellow;
+}
+
+#earth {
+    /* Style your earth */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    
+    height: 50px;
+    width: 50px;
+    margin-left: -25px;
+    margin-top: -25px;
+    
+    border-color: white;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 50%;
+    
+    box-shadow: 0 0 20px white;
+    
+}
+
+#earth-orbit {
+    /* For Section #2 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 500px;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -250px;
+
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+    
+    -webkit-animation: spin-right 10s linear infinite;
+     -moz-animation: spin-right 10s linear infinite;
+      -ms-animation: spin-right 10s linear infinite;
+       -o-animation: spin-right 10s linear infinite;
+          animation: spin-right 10s linear infinite;
+    
+}
+
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+

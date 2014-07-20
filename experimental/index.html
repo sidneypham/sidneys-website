@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Welcome to Sidney's Website. It is still under construction.">
+	<title>Experimental Page</title>
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script src="../js/experimental.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<audio id="audio" autoplawefwefwefylwefwefoop>
+			<source src="../files/dernieredanse/music.mp3"/>
+			<source src="../files/dernieredanse/music.ogg"/>
+		</audio>	
+		<a href="../">
+			<h1 class="logo">Sidney's Website</h1>
+		</a>
+		<div id="music-controls">
+			<button class="button" onclick="pauseMusic()">
+				<span class="glyphicon glyphicon-pause"></span>
+			</button>
+			<button class="button" onclick="playMusic()">
+				<span class="glyphicon glyphicon-play"></span>
+			</button>
+			<button class="button" onclick="stopMusic()">
+				<span class="glyphicon glyphicon-stop"></span>
+			</button>
+		</div>
+		<ul class="navbar">
+			<li>
+				<a href="../" title="Home">Home</a>
+			</li>
+			<li>
+				<a href="../about" title="About">About</a>
+			</li>
+			<li>
+				<a href="/experimental" id="current" title="Experimental">Experimental Page</a>
+			</li>
+			<li>
+				<a href="/randomiser" title="Randomiser">List Randomiser</a>
+			</li>
+			<li>
+				<a href="../chat" title="Chat">Chat</a>
+			</li>
+			<li>
+				<a href="../other" title="Other">Other Stuff</a>
+			</li>
+		</ul>
+
+		<h2>This page is under construction.</h2>
+		<h3>This is just a random calculator.</h3>
+		<h4>Enter value in cm to convert to mm.</h4>
+		<form name="calculator" onsubmit="return false;">
+			<ul>
+				<li>
+					<label for="number">Enter number: </label>
+					<input type="text" name="number" id="number" placeholder="Number" autofocus="autofocus" onkeypress="enterPressCalculate()">
+				</li>
+				<br>
+				<li>
+					<input type="button" name="submit" value="Calculate!" class="button" onclick="calculate()">
+				</li>
+			</ul>
+		</form>
+		<br>
+		
+		<iframe src="http://www.acapela-group.com/demo-tts/DemoHTML5Form_V2.php?langdemo=Powered+by+%3Ca+href%3D%22http%3A%2F%2Fwww.acapela-vaas.com%22%3EAcapela+Voice+as+a+Service%3C%2Fa%3E.+For+demo+and+evaluation+purpose+only%2C+for+commercial+use+of+generated+sound+files+please+go+to+%3Ca+href%3D%22http%3A%2F%2Fwww.acapela-box.com%22%3Ewww.acapela-box.com%3C%2Fa%3E" frameborder="0" height="430px;" width="264px" style="margin-bottom: 50px;"></iframe>
+
+		<iframe src="http://www.collinsdictionary.com/dictionary/english-french" frameborder="0" height="900px" width="1000px" style="position: absolute; top: -9999em; visibility: hidden; margin-bottom: 50px;" onload="this.style.position='static'; this.style.visibility='visible';" href="..."></iframe>
+
+		<div id="universe"> 
+		    <img id="sun" src="../img/sun.png">
+		    <div id="earth-orbit">
+		        <img id="earth" src="../img/earth.png">
+		    </div>
+		</div>	
+
+		<footer>
+			<p>Sidney's Website</p>
+		</footer>	
+
+	</div>
+</body>
+</html>

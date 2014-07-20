@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Welcome to Sidney's Website. It is still under construction.">
+	<title>Belltimes Countdown</title>
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+	console.log("Done!");
+
+
+	var foo = function (data) {
+		var placeholder = document.getElementById("placeholder");
+		console.log("done");
+
+		var output = "<ul>";
+
+		output += "<li>" + data.date + " " + data.day + " " + data.term + " " + data.week + " " + data.weekType +"</li>";
+       
+
+        output += "</ul>";
+		placeholder.innerHTML = output;
+	}
+
+	document.addEventListener('readystatechange', function() {
+    	if (document.readyState === "complete") {
+      		foo();
+   		}
+	});
+	</script>
+    <script type="text/javascript" src="https://student.sbhs.net.au/api/timetable/bells.json?callback=foo"></script>
+</head>
+<body>
+	<div class="wrap">	
+		<a href="../">
+			<h1 class="logo">Sidney's Website</h1>
+		</a>
+		<ul class="navbar">
+			<li>
+				<a href="../" title="Home">Home</a>
+			</li>
+			<li>
+				<a href="../about" title="About">About</a>
+			</li>
+			<li>
+				<a href="../experimental" title="Experimental">Experimental Page</a>
+			</li>
+			<li>
+				<a href="/randomiser" title="Randomiser">List Randomiser</a>
+			</li>
+			<li>
+				<a href="../chat" title="Chat">Chat</a>
+			</li>
+				<a href="../other" title="Other">Other Stuff</a>
+			</li>
+		</ul>
+		
+		<div id="placeholder"></div>
+
+		<footer>
+			<p>Sidney's Website</p>
+		</footer>	
+		
+	</div>
+</body>
+</html>

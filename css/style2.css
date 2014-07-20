@@ -1,0 +1,118 @@
+html {
+	background: #e3e3e3;
+	font-family: 'Roboto', sans-serif;
+	color: rgb(78,78,78);
+}
+
+.wrap {
+	background: #eeeeee;
+	width: 90%;
+	height: 100vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: auto;
+}
+
+body {	
+	width: 80%;
+	margin: auto;		
+}
+
+.logo {
+	background: url(../img/sidneyswebsite.gif) no-repeat;
+	text-indent: -9999px;
+	height: 111px;
+	width: 300px;
+}
+
+h1 {
+	margin: 0px;
+	padding-top: 8px;
+}
+
+.navbar {
+	width: 90%;
+	padding: 8px 0px;
+	background-color: #eeeeee; 
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	position: relative;
+	right: 0px;
+}
+
+.navbar li {
+	display: inline-block;
+	
+}
+
+.navbar a {
+	text-decoration: none;
+	color: red;
+	font-size: 30px;
+	padding: 8px;
+}
+
+.navbar a:hover {
+	background-color: #5cb85c;
+	/* background color2 is #e5e5e5 */
+	color: #cc0000;
+}
+
+#current {
+	color: blue;
+	background-color: #e3e3e3;
+}
+
+#current:hover {
+	color: #0000b2;
+	background-color: #e3e3e3;
+}
+
+.button {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.button:hover
+{
+  color: #ffffff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+}
+
+form ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+form label {
+	display: inline-block;
+	width: 150px;
+}
+
+/*
+blue: #428bca;
+green: #5cb85c;
+lightblue: #5bc0de ;
+yellow: #f0ad4e;
+red: #d9534f;
+*/

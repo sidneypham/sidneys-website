@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Welcome to Sidney's Website. It is still under construction.">
+	<title>Randomiser</title>
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="wrap">	
+		<a href="../">
+			<h1 class="logo">Sidney's Website</h1>
+		</a>
+		<ul class="navbar">
+			<li>
+				<a href="../" title="Home">Home</a>
+			</li>
+			<li>
+				<a href="../about" title="About">About</a>
+			</li>
+			<li>
+				<a href="../experimental" title="Experimental">Experimental Page</a>
+			</li>
+			<li>
+				<a href="/randomiser" id="current" title="Randomiser">List Randomiser</a>
+			</li>
+			<li>
+				<a href="../chat" title="Chat">Chat</a>
+			</li>
+				<a href="../other" title="Other">Other Stuff</a>
+			</li>
+		</ul>
+		
+		<form name="randomiser" onsubmit="return false;">
+			<ul>
+				<li>
+					<label for="list">List of things to randomise (separate with new lines): </label>
+					<textarea rows="20" cols="20" type="text" name="list" id="list" class="textarealabel" placeholder="List of things" autofocus="autofocus"></textarea>
+				</li>
+				<br>
+				<li>
+					<input type="button" name="submit" value="Randomise!" class="button" onclick="listRandomise()">
+				</li>
+			</ul>
+		</form>
+
+		<p id="randomised"></p>
+
+		<footer>
+			<p>Sidney's Website</p>
+		</footer>	
+		
+	</div>
+</body>
+</html>

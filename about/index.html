@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Welcome to Sidney's Website. It is still under construction.">
+	<title>About</title>
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		#dl:hover {
+			font-size: 0px;
+		}
+
+		#dl:hover:before {
+			font-size: 25px;
+			content: attr(data-hover);
+		}
+
+	</style>
+	<script>
+	var xhr = new XMLHttpRequest();
+	xhr.open("GET", "http://student.sbhs.net.au/api/timetable/bells.json", false);
+	xhr.send();
+
+	var apitest = document.getElementById("apitest");
+	apitest.innerHTML = xhr.status + "\n" + xhr.statusText;
+
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<a href="../">
+			<h1 class="logo">Sidney's Website</h1>
+		</a>
+		
+		<ul class="navbar">
+			<li>
+				<a href="../" title="Home">Home</a>
+			</li>
+			<li>
+				<a href="/about" id="current" title="About">About</a>
+			</li>
+			<li>
+				<a href="../experimental" title="Experimental">Experimental Page</a>
+			</li>
+			<li>
+				<a href="/randomiser" title="Randomiser">List Randomiser</a>
+			</li>
+			<li>
+				<a href="../chat" title="Chat">Chat</a>
+			</li>
+			<li>
+				<a href="../other" title="Other">Other Stuff</a>
+			</li>
+
+
+		</ul>
+		
+		<h2>Nothing here yet!</h2>
+
+		<p>...Oh wait! What is this? IS THIS A FILE?</p>
+		<p style="font-size: 10px;">If you're reading this, please do not actually download the file. Thank you.</p>
+		<p style="font-size: 10px;">I'm serious. Don't even think about it.</p>
+		<a href="tempdownload.php" id="dl" data-hover="If you're reading this. Very funny, isn't it? Now GO AWAY. LAST CHANCE!">Download the test file</a>
+
+		
+		<footer>
+			<p>Sidney's Website</p>
+		</footer>		
+		
+	</div>
+</body>
+</html>
